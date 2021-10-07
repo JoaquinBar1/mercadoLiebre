@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+header{
+    background-color: #EAC926;
+    font-family:'Roboto' ;
+}
+.image-logo{
+    width: 300px;
+}
+.burger-menu{
+    color:#ffffff;
+    text-align: center;
+}
+main{
+    background-color: #ebebeb;
+}
+.titulares{
+    font-size: 24px;
+}
+.precio{
+    font-size: 18px;
+}
+.descuento{
+    font-size: 16px;
+}
+.descripcion{
+    font-size: 16px;
+}
+.image{
+    width: 300px;
+    height: 300px;
+}
+.tarjeta-credito{
+    color: #1259c3;
+    text-align: center;
+} 
+.gift{
+    color:#1259c3;
+    text-align: center;
+}
+.seguridad{
+    color: #1259c3;
+    text-align: center;
+}
+
