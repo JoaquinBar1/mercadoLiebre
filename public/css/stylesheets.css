@@ -2,48 +2,144 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; 
+}
+body{
+    background-color: #ebebeb;
+    font-size: 12px;  
+}
+h3{
+    font-size: 24px;
+}
+
+/* --- Header ---*/
+
+.main-header{
+    background-color: #EAC926;
+    padding: 20px; 
     
 }
-header{
-    background-color: #EAC926;
-    font-family:'Roboto' ;
+header div .logo{
+    width: 100px;  
+    display: block;  
 }
-.image-logo{
-    width: 300px;
-}
-.burger-menu{
-    color:#ffffff;
+.copy-header{
+    font-weight: 400px;
     text-align: center;
+}
+.hamburger-button{
+    background-color: #03264c;
+    color: #ffffff;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+.main-nav-bar ul{
+    list-style: none;
+    margin:0;
+    padding: 0;
+
+}
+.main-nav-bar a{
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
 }
 main{
     background-color: #ebebeb;
+    margin: 0 auto;
+    width: 90%;
 }
-.titulares{
-    font-size: 24px;
+main section article{
+    margin: 15px;
+   
 }
-.precio{
+main section div.products{
+    background-color: #ffffff;
+    width: 90%;
+    margin: 15px;
+    border: solid 1px #ebebeb;
+    display: block;
+    position: relative;
+    
+}
+.fas.fa-truck{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    color:green;
+
+}
+main section article .image{
+    border-radius: 15%;
+    width: 100%;
+}
+article div.main-article{
+    border-top: 1px solid #ebebeb;
+    width: 100%;
+    margin: 10px;
+    padding: 15px;
+    position: relative;
+    
+}
+article p.price{
     font-size: 18px;
+    font-weight: bold;
+    width: 30%;
+
 }
-.descuento{
+.off{
     font-size: 16px;
+    font-style: normal;
+    margin-top: 1px;
+    color: green;
 }
-.descripcion{
+.description{
     font-size: 16px;
-}
-.image{
-    width: 300px;
-    height: 300px;
-}
-.tarjeta-credito{
-    color: #1259c3;
-    text-align: center;
-} 
-.gift{
-    color:#1259c3;
-    text-align: center;
-}
-.seguridad{
-    color: #1259c3;
-    text-align: center;
+    font-weight: normal;
+    margin-top: 1px;
+    display: none;
 }
 
+.credit-card, .gift, .security{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2em;
+    color:#1259c3;
+}
+.card, .free-shipping .safety {
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+}
+
+
+/*----Media Queries-----*/
+
+@media (min-width: 361px){
+
+    .hamburger-button{
+        display: none;
+    }   
+
+}
+
+@media (min-width: 769px){
+    body{
+    box-shadow​: ​0px​ ​0px​ ​10px​ ​rgb ​(​100​, ​100​, ​100​);
+    }
+}
