@@ -38,6 +38,10 @@ header div .logo{
     font-size: 18px;
     margin: auto;
 }
+header nav .main-nav-bar{
+    display:flex;
+    flex-wrap: wrap;
+}
 .main-nav-bar ul{
     list-style: none;
     margin:0;
@@ -51,24 +55,23 @@ header div .logo{
     padding: 5px 0;
     font-size: 17px;
 }
+section .banner{
+    width: 100%;
+}
 main{
     background-color: #ebebeb;
     margin: 0 auto;
     width: 90%;
-}
-main section article{
-    margin: 15px;
-   
-}
-main section div.products{
-    background-color: #ffffff;
-    width: 90%;
-    margin: 15px;
-    border: solid 1px #ebebeb;
-    display: block;
-    position: relative;
     
 }
+main section article{
+    background-color: #ffffff;
+    margin: 10px 0 10px 0;
+    position: relative;
+    border-radius: 15px;
+    
+}
+
 .fas.fa-truck{
     display: block;
     font-size: 16px;
@@ -91,9 +94,10 @@ main section article .image{
 article div.main-article{
     border-top: 1px solid #ebebeb;
     width: 100%;
-    margin: 10px;
     padding: 15px;
+    display: flex;
     position: relative;
+
     
 }
 article p.price{
@@ -112,7 +116,6 @@ article p.price{
     font-size: 16px;
     font-weight: normal;
     margin-top: 1px;
-    display: none;
 }
 
 .credit-card, .gift, .security{
@@ -133,13 +136,32 @@ article p.price{
 @media (min-width: 361px){
 
     .hamburger-button{
+        display: block;
+        margin-top: 30px;
+    }
+
+    .description{
         display: none;
-    }   
+    }
+
+    .main-nav-bar{
+        display: none;
+    }
+    main section div.products{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    main section article{
+        width: 45%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
 }
 
 @media (min-width: 769px){
-    body{
-    box-shadow​: ​0px​ ​0px​ ​10px​ ​rgb ​(​100​, ​100​, ​100​);
-    }
+
 }
