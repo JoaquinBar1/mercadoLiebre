@@ -124,7 +124,7 @@ article p.price{
     font-size: 2em;
     color:#1259c3;
 }
-.card, .free-shipping .safety {
+.card, .free-shipping, .safety {
     text-align: center;
     font-weight: bold;
     padding: 5px;

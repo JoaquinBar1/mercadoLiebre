@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto' sans-serif;
+}
+ /* Header */
+
+.main-header{
+    background-color: #EAC926;
+    padding: 15px;   
+}
+header div .logo{
+    width: 100px;  
+    display: block;  
+}
+
+.hamburger-button{
+    background-color: #03264c;
+    color: #ffffff;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+
+.form-crear{
+    padding: 8px;
+    background-color: #ebebeb;
+    
+}
+.type-text{
+    border-radius: 5%;
+    padding: 8px;
+    width: 90%;
+}
+.title{
+    display: block;
+    margin: 10px;
+}
+div.button{
+    background-color: #03264C;
+    color: #ffffff;
+}
+
+/* FOOTER */
+
+.footer-edit{
+    background-color: #ebebee;
+}
+
+.credit-card, .gift, .security{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2em;
+    color:#1259c3;
+}
+.card, .free-shipping, .safety {
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+}
