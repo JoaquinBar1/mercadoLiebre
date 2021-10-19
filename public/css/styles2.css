@@ -1,0 +1,261 @@
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h3{
+    font-size: 20px;
+}
+
+p{
+    font-size: 10px;
+}
+/* -----HEADER-----*/
+div.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+header{
+    background-color: #EAC926;
+}
+
+header div.logo{
+    width: 50%;
+    padding: 10px;
+}
+header .form{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;
+}
+
+header .form .input{
+    background-color: #ffffff;
+    border: 1px solid #ebebeb;
+    color: #666;
+    padding: 2px;
+}
+
+header .form .search{
+    background-color:#ffffff;
+    color: #666;
+    width: 20px;
+    height: 18px;
+}
+/* -----MAIN HEADER-----*/
+nav.main-nav-bar{
+    font-size: 12px;
+    margin-left: 20px;
+    display: none;
+}
+.main-nav-bar ul li{
+    margin: 20px;
+    list-style-type: none;
+}
+.main-nav-bar ul li a{
+    text-decoration: none;
+    color: black;
+}
+.left-nav-bar{
+    display:flex;
+}
+.left-nav-bar li{
+    margin-left: 10px;
+}
+.right-nav-bar{
+    display:flex;
+}
+.right-nav-bar li{
+    margin-right: 10px;
+}
+.burger-menu{
+    text-align: center;
+}
+
+.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+/*-----PRODUCTOS------*/
+div.last-views,
+div.off{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price{
+    font-size: 18px;
+    width: 30%;
+}
+
+.discount{
+    width: 70%;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color:rgb(100, 100, 100);
+}
+
+.description{
+    display: none;
+    margin-top: 20px;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+/*-------FOOTER------*/
+.credit-card, 
+.gift, 
+.security{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2em;
+    color:#1259c3;
+}
+.card,
+.free-shipping, 
+.safety {
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+}
+.footer-edit{
+    display: flex;
+    margin: 10px 0;
+    padding: 10px;
+    
+}
+
+@media (min-width: 361px){
+
+    .description{
+        display: block;
+    }
+
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section div.products{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.products article{
+        width: 45%;
+    }
+
+    .price,
+    .discount{
+        width: 50%;
+    }
+    
+}
+
+@media (min-width: 769px){
+    .burger-menu{
+        display:none;
+    }
+    header nav.main-nav-bar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    nav.left-nav-bar{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    nav.right-nav-bar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    main section div.products article{
+        width: 22%;
+    }
+    .footer-edit{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
