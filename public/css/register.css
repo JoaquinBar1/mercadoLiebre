@@ -16,8 +16,7 @@ header div .logo{
 }
 
 .hamburger-button{
-    background-color: #03264c;
-    color: #ffffff;
+    background-color: #0044AA;
     display: block;
     max-width: 50px;
     padding: 15px 0;
@@ -26,32 +25,47 @@ header div .logo{
     font-size: 18px;
     margin: auto;
 }
-
-.form-crear{
-    padding: 8px;
-    background-color: #ebebeb;
-    
+a .hamburger-button .fas{
+    color: #ffffff;
 }
-.type-text{
-    border-radius: 5%;
-    padding: 8px;
-    width: 90%;
-}
-.title{
-    display: block;
+main h1{
+    text-align: center;
+    color:#03264c;
     margin: 10px;
 }
+
+.form-crear{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+.nombre, .usuario, .nacimiento,
+.direccion, .tipo-usuario, .categorias, .foto-perfil, .password, .botones{
+    margin: 5px;
+    padding: 10px;   
+}
+
+label.estilos-label{
+    font-size: 20px;
+    color: #012964;
+}
+
+main form.fa, .fas, .far{
+    font-size:20px;
+    margin-right:3px;
+    color: #012964;
+}
 div.button{
-    background-color: #03264C;
+    background-color:#012964;
     color: #ffffff;
 }
 
 /* FOOTER */
 
 .footer-edit{
+    margin: 20px 0;
     background-color: #ebebee;
 }
-
 .credit-card, .gift, .security{
     text-align: center;
     margin-bottom: 10px;

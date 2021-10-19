@@ -16,21 +16,33 @@ h3{
 
 .main-header{
     background-color: #EAC926;
-    padding: 20px; 
+    padding: 20px;    
+}
+.header-top-bar{
+    display:flex;
+    flex-direction: column;
     
 }
 header div .logo{
-    width: 100px;  
+    width: 200px; 
     display: block;  
 }
+input.search-bar{
+    width: 200px;
+    margin: 30px 0;
+
+}
 .copy-header{
-    font-weight: 400px;
-    text-align: center;
+    margin: 15px 0;
+    width:100%;
+    font-size: 20px;
+    
+    
 }
 .hamburger-button{
     background-color: #03264c;
     color: #ffffff;
-    display: block;
+    display: none;
     max-width: 50px;
     padding: 15px 0;
     border-radius: 5px;
@@ -38,15 +50,23 @@ header div .logo{
     font-size: 18px;
     margin: auto;
 }
-header nav .main-nav-bar{
+.fas.fa-bars{
+    display: none;
+}
+.main-nav-bar{
     display:flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+.main-nav-bar.left-navbar{
+    margin: 10px 0;
+    display: block;
 }
 .main-nav-bar ul{
+    display: block;
     list-style: none;
     margin:0;
     padding: 0;
-
 }
 .main-nav-bar a{
     text-decoration: none;
@@ -55,6 +75,13 @@ header nav .main-nav-bar{
     padding: 5px 0;
     font-size: 17px;
 }
+li i.far.fa-id-card,
+li i.fas.fa-sign-in-alt,
+li i.fas.fa-shopping-basket{
+    color:#1259c3;
+    margin: 2px;
+}
+
 section .banner{
     width: 100%;
 }
@@ -70,6 +97,10 @@ main section article{
     position: relative;
     border-radius: 15px;
     
+}
+main section > h3{
+    margin: 5px;
+    padding: 5px;
 }
 
 .fas.fa-truck{
@@ -96,19 +127,21 @@ article div.main-article{
     width: 100%;
     padding: 15px;
     display: flex;
+    flex-direction: column;
     position: relative;
 
     
 }
 article p.price{
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: bolder;
     width: 30%;
+    margin: 5px;
 
 }
 .off{
     font-size: 16px;
-    font-style: normal;
+    font-weight: bold;
     margin-top: 1px;
     color: green;
 }
@@ -116,18 +149,28 @@ article p.price{
     font-size: 16px;
     font-weight: normal;
     margin-top: 1px;
+    display: none;
 }
 
-.credit-card, .gift, .security{
+.credit-card, 
+.gift, 
+.security{
     text-align: center;
     margin-bottom: 10px;
     font-size: 2em;
     color:#1259c3;
 }
-.card, .free-shipping, .safety {
+.card,
+.free-shipping, 
+.safety {
     text-align: center;
     font-weight: bold;
     padding: 5px;
+}
+footer{
+    margin: 10px 0;
+    padding: 10px;
+    
 }
 
 
@@ -136,17 +179,22 @@ article p.price{
 @media (min-width: 361px){
 
     .hamburger-button{
-        display: block;
+        display: none;
         margin-top: 30px;
     }
-
+    .fas.fa-bars{
+        display: none;
+    }
     .description{
-        display: none;
+        display: block;
+    }
+    nav.main-nav-bar{
+        display:flex;
+        flex-direction: row; 
+        align-items: center;
+        justify-content: space-between;  
     }
 
-    .main-nav-bar{
-        display: none;
-    }
     main section div.products{
         display: flex;
         flex-wrap: wrap;
@@ -163,5 +211,35 @@ article p.price{
 }
 
 @media (min-width: 769px){
+    .copy-header{
+        text-align: center;
+    }
+    .hamburger-button{
+        display: none;
+    }
+    .description{
+        display: inline-block;
 
+    }
+    nav.main-nav-bar{
+        display:flex;
+        flex-wrap: wrap;
+        align-items: center; 
+        justify-content: space-between;
+    }
+    ul.left-navbar li a{
+        margin: 10px;
+        
+    }
+    .main-nav-bar ul{
+        display: flex;
+        list-style: none;
+        margin:10px;
+        padding: 10px;
+    }
+    main section.products{
+       /* box-shadow:​0px​ ​10px​ rgb​(​100​, ​100​, ​100​);*/
+       margin:10px 0;
+
+    }
 }

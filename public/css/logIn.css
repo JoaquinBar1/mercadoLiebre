@@ -14,24 +14,13 @@ header div .logo{
     width: 100px;  
     display: block;  
 }
-
-.hamburger-button{
-    background-color: #03264c;
-    color: #ffffff;
-    display: block;
-    max-width: 50px;
-    padding: 15px 0;
-    border-radius: 5px;
+.main-login{
+    margin:30px 36px;
+    padding: 90px 9px;
+    background-color: #ffffff;
+}
+.usuario{
     text-align: center;
-    font-size: 18px;
-    margin: auto;
-}
-.form-crear{
-    padding: 8px;
-    background-color: #ebebeb;
-        
-}
-.button{
-    background-color: #03264c;
-    color: #ffffff;
+    padding: 10px;
+    margin:10px;
 }

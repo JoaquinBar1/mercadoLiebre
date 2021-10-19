@@ -29,12 +29,17 @@
 </header>
 
 <form action="/logIn" method="POST" class="form-crear">
-    <div>
-        <label class="usuario">Nombre de Usuario</label>
-        <input type="text" name="usuario" required>
+    <div class="main-login">
+        <h3>BIENVENID@</h3>
+        <label for="usuario">
+            <i class="fas fa-user"></i>
+        </label>
+        <input type="text" name="usuario" placeholder="Nombre de Usuario" required>
         <br>
-        <label class="contraseña">Contraseña</label>
-        <input type="password" name="password" required>
+        <label class="password">
+            <i class="fas fa-lock"></i>
+        </label>
+        <input type="password" name="password" placeholder="Ingrese contraseña" required>
         <br>
         <button class="button"><a href="/">Enviar</a></button>
 
