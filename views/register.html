@@ -5,70 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Styles-->
-    <link rel="stylesheet" href="/css/normalize.css">
+    <link href="/css/normalize.css" rel="stylesheet">
     <link href="/css/register.css" rel='stylesheet'>
      <!--Font Awesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" rel="stylesheet">
     <!--G-Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <title>registro-ML </title>
+    <title>Crear Usuario - </title>
 
 </head>
 
 <body>
-
-    <header class="main-header"> 
-        <div class="header-top-bar">
-            <img src="/images/logo-mercado-liebre.svg" class="logo">
-                <input type="text" name="search-bar" class="search-bar" placeholder="Que estas buscando?">
-            <div class="copy-header">
-                <i class="fas fa-hand-holding-usd"></i>
-                Compra en cuotas y sin tarjeta de credito
-            </div>
+    <header>
+        <!-----HEADER----->
+        <div class="top-header">
+            <div class="main-header">
+                <div class="logo"> 
+                    <a href="/">
+                        <img src="images/logo-mercado-liebre.svg" alt="Logo">
+                    </a>
+                </div>
+                <div class="form" action="#" method="GET">
+                    <div class="input">
+                        <input type="text" name="search-bar" placeholder="Que estas buscando?">
+                        <div class="lupa">
+                            <button type="submit">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>    
+                </div>
+            </div>    
+                <p>
+                    <i class="fas fa-hand-holding-usd"></i>
+                    Comprá en cuotas y sin tarjeta de crédito
+                </p>
         </div>
-        <a href="/" class="hamburger-button">
-            <i class="fas fa-bars"></i>
-        </a>
-
-</header>
+        <!--MAIN HEADER-->
+        <nav class="main-nav-bar">
+            <ul class="left-nav-bar">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul class="right-nav-bar">
+                <li><a href="/registrarUsuario">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                <li><a href="/logIn">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+            </ul>
+        </nav>
+        <div class="burger-menu">
+            <i class="fa fa-bars burger"></i>
+        </div>
+    </header>
+   
 <main>
-    <h1>Crea tu cuenta</h1>
     <!--Formularios-->
     <form action="/crear-usuario" method="POST" class="form-crear">
-
+        <h1>Crea tu cuenta</h1>
     <div class="nombre">
         <label for="nombre"> 
             <i class="fas fa-id-card"></i>
         </label>
-        <input type="text" name="nombre" placeholder="Nombre y Apellido" required>
+        <input class="user-type" type="text" name="nombre" placeholder="Nombre y Apellido" required>
     </div>
 
     <div class="usuario">
         <label for="usuario">
             <i class="fas fa-user"></i>
         </label>
-        <input type="text" name="usuario" placeholder="Nombre Usuario" required>
+        <input class="user-type" type="text" name="usuario" placeholder="Nombre Usuario" required>
     </div>
 
-    <div>
+    <div class="nacimiento">
         <label for="nacimiento">
             <i class="far fa-calendar-alt"></i>
         </label>
-        <input type="date" name="nacimiento" class="date" placeholder="Fecha de nacimiento" value="2021/10/11" min="1950/01/01" max="2021/10/10">
+        <input class="user-type" type="date" name="nacimiento" placeholder="Fecha de nacimiento" value="2021/10/11" min="1950/01/01" max="2021/10/10">
     </div>
 
     <div class="direccion">
         <label for="direccion">
             <i class="fas fa-map-marker-alt"></i>
         </label>
-        <input type="text" name="direccion" placeholder="Domicilio">
+        <input class="user-type" type="text" name="direccion" placeholder="Domicilio">
     </div>
 
     <div class="tipo-usuario">
-        <label for="tipoUsuario">Quiero comprar</label>
+        
+        <label for="tipoUsuario">Comprar</label>
         <input type="radio" name="comprador" value="cliente">
         
-        <label for="tipoUsuario">Quiero vender</label>
+        <label for="tipoUsuario">Vender</label>
         <input type="radio" name="vendedor" value="cliente">
     </div>
 
@@ -103,14 +132,14 @@
         <label for="password">
             <i class="fas fa-lock"></i>
         </label>
-        <input type="password" name="clave" placeholder="Ingrese su contraseña"required>
+        <input class="user-type" type="password" name="clave" placeholder="Ingrese su contraseña"required>
     </div>
 
     <div class="password">
         <label for="password">
             <i class="fas fa-lock"></i>
         </label>
-        <input type="password" name="clave" placeholder="Confirme contraseña" required>
+        <input class="user-type" type="password" name="clave" placeholder="Confirme contraseña" required>
     </div>
 
     <div class="botones">
