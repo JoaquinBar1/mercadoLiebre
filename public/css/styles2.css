@@ -2,20 +2,24 @@
     margin: 0px;
     padding: 0px;    
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
+  
 }
 
 h3{
-    font-size: 20px;
+    font-size: 15px;
+    color: #666;
 }
 
 p{
-    font-size: 15px;
+    color: #231312;
+    font-size: 12px;
 }
+
  /* >---------- Header ----------< */
 header {
      background-color:#EAC926; 
@@ -179,15 +183,27 @@ article div.main-article{
 
 
 /* >---------- FOOTER ----------< */
+footer{
+    background-color: #ffffff;
+    width: 90%;
+    margin: auto;
+    
+}
+footer article{
+    width: 30%;
+    margin:5px auto;
+    
 
+}
 .footer-edit{
     margin: 20px 0;
-    background-color: #ebebee;
+    background-color: #ebebeb;
+    
 }
 
 .credit-card, .gift, .security{
     text-align: center;
-    margin-bottom: 10px;
+    margin: 5px auto 0;
     font-size: 2em;
     color:#1259c3;
 }
@@ -269,8 +285,13 @@ article div.main-article{
         width: 22%;
     }
     .footer-edit{
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
+    }
+    article p{
+        text-align: content;
+        font-size: 15px;
     }
 
 }
