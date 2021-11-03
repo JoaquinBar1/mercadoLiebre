@@ -7,9 +7,7 @@
 }
 
  /* >---------- Header ----------< */
-body{
-    background-color: #ebebeb;
-}
+
 header {
      background-color:#EAC926; 
  }
@@ -117,6 +115,35 @@ form input{
     margin: 10px 0;
 }
 
+/* >---------- FOOTER ----------< */
+
+.footer-edit{
+    margin: 20px 0;
+    background-color: #ebebee;
+}
+
+.credit-card, .gift, .security{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2em;
+    color:#1259c3;
+}
+
+.card, .free-shipping, .safety {
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.pie-footer{
+    text-align: center;
+    font-size: 12px;
+    font-weight: bolder;
+}
+div .card h3{
+    font-weight: 900;
+    font-size: 20px;
+}
  
 /* >--------Media queries--------< */
 @media(min-width: 769px){
@@ -155,4 +182,13 @@ form input{
     .burger-menu{
         display: none;
     }
+    .footer-edit{
+        display:flex;
+        line-height: 1.5em;
+    }
+    div .card h3{
+        font-weight: 900;
+        font-size: 20px;
+    }
+
 }
